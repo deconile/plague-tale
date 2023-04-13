@@ -1,0 +1,57 @@
+
+section {
+    background-attachment: fixed;
+}
+
+/* HERO */
+
+#hero {
+    display:grid;
+    grid-template-rows: 1fr auto;
+    background-image:url(../images/home-hero.jpg);
+}
+
+#hero .overlay {
+    display:flex;
+    align-items: flex-end;
+    background-attachment: scroll;
+}
+
+#hero > .overlay > .container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    padding:32px 128px;
+}
+
+#hero .logo {
+    width:40%;
+}
+
+
+
+
+/* STORY SECTION ******************************/
+
+#across {
+    background-image:url(../images/home-across.jpg);
+}
+
+#journey {
+    background-image:url(../images/home-journey.jpg);
+    background-position: center bottom;
+}
+
+#shadows {
+    background-image:url(../images/home-shadows.jpg);
+    background-position: 80% 50%;
+}
+
+#fantasy {
+    background-image:url(../images/home-fantasy.jpg);
+}
+
+#purchase {
+    background-image:url(../images/home-purchase.jpg);
+}
