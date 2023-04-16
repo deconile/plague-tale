@@ -1,0 +1,153 @@
+
+/* CHARACTER ACCORDION  ************************/
+
+#characters .container {
+    display:flex;
+    overflow: hidden;
+    height:100%;
+}
+
+#characters .character {
+    display:grid;
+    grid-template-columns: auto auto;
+    width:68px;
+    transition:1000ms;
+}
+
+#characters .character .tab {
+    position:relative;
+    width:64px;
+    height:100%;
+    background-color:#0006;
+    border-left:1px solid var(--primary);
+    cursor:pointer;
+    transition:500ms;
+    background-position: center;
+}
+
+#characters .character.active {
+    pointer-events: none;
+}
+
+#characters .character .tab .label {
+    height:100%;
+    background-color:#0006;
+    position:relative;
+    width:64px;
+    transition:1000ms;
+}
+
+#characters .character .tab .label > div {
+    position:absolute;
+    left:3px;
+    bottom:-60px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    height:57px;
+    width:350px;
+    white-space: nowrap;
+    background-color:var(--primary);
+    color:var(--gray-800);
+    font-size:1.2em;
+    font-weight:600;
+    font-family:'Cinzel',serif;
+    padding:0 32px;
+    border-top-right-radius: 64px;
+    border-bottom-right-radius: 64px;
+    transform-origin: top left;
+    transform: rotateZ(-90deg);
+    transition:500ms;
+}
+
+#characters .character .tab:hover .label {
+    background-color:#FFCD1E66;
+}
+
+#characters .character .tab:hover .label > div,
+#characters .character.active .tab .label > div {
+    width:400px;
+    padding-left:64px;
+    background-color:var(--gray-800);
+    color:var(--primary);
+}
+
+
+
+#characters .character .image {
+    overflow:hidden;
+    display:flex;
+    justify-content: right;
+    width:0%;
+    height:100%;
+    transition: 1000ms;
+}
+
+#characters .character.active,
+#characters .character.active .image {
+    width:100%;
+}
+
+#characters .labels {
+    position: relative;
+    height:100%;
+    display:flex;
+    align-items: flex-end;
+}
+
+#characters .character .image .label {
+    position:relative;
+    bottom:150px;
+}
+
+#characters .labels .label ul {
+    padding:0 0 0 62px;
+}
+
+#characters .labels .label h4 {
+    margin-bottom:-8px;
+}
+
+
+
+
+
+/* PORTRAITS */
+#characters .character {
+    background-position: center;
+    background-attachment: fixed;    
+}
+
+
+
+#characters #amicia, #characters #amicia .tab {background-image:url(../images/character-amicia.jpg);}
+#characters #hugo, #characters #hugo .tab {background-image:url(../images/character-hugo.jpg);}
+#characters #lucas, #characters #lucas .tab {background-image:url(../images/character-lucas.jpg);}
+#characters #beatrice, #characters #beatrice .tab {background-image:url(../images/character-beatrice.jpg);}
+#characters #sophia, #characters #sophia .tab {background-image:url(../images/character-sophia.jpg);}
+#characters #arnaud, #characters #arnaud .tab {background-image:url(../images/character-arnaud.jpg);}
+
+#characters .character .tab {
+    background-position: center;
+}
+
+/* OVERRIDE TO HIDE BACKGROUND IMAGES ON ACTIVE TAB */
+#characters .character.active .tab {
+    background-position: left center;
+}
+
+
+
+/* LABEL ANIMATIONS | DELAYS | components.css for settings */
+
+#characters .labels .label {transition-delay: 1000ms;}
+#characters .labels .label h2 {transition-delay: 2000ms;}
+/* SUB ONE */
+#characters .labels .sublabel:first-child {transition-delay: 3000ms;}
+#characters .labels .sublabel:first-child h4 {transition-delay: 3500ms;}
+#characters .labels .sublabel:first-child h3 {transition-delay: 4000ms;}
+
+/* SUB TWO */
+#characters .labels .sublabel:last-child {transition-delay: 4000ms;}
+#characters .labels .sublabel:last-child h4 {transition-delay: 4500ms;}
+#characters .labels .sublabel:last-child h3 {transition-delay: 5000ms;}

@@ -7,9 +7,6 @@ $(document).ready(function(){
 
 //WHEN PAGE HAS LOADED
 $(window).on('load', function(){
-    setStickyBar();
-    stickyBarCheck();
-    revealNav();
     paginationControls();
 });
 
@@ -22,48 +19,7 @@ $(window).on('scroll',function(){
     triggerInitLabelLoad();
 });
 
-var barTop;
-var bp = false;
-function setStickyBar(){
-    barTop = $('.buybar').offset().top;
-    if($(window).scrollTop() >= barTop - 50 && !bp){
-        $('nav').addClass('hidden');
-        $('.buybar').addClass('sticky');
-        $('.buybar').removeClass('secondary');
-        bp = true;
-    } 
-    if($(window).scrollTop() < barTop - 50 && bp){
-        $('nav').removeClass('hidden');
-        $('.buybar').removeClass('sticky');
-        $('.buybar').addClass('secondary');
-        bp = false;
-    }
-}
 
-function stickyBarCheck(){
-    $(window).on('scroll',function(){
-        setStickyBar();
-    });
-}
-
-function revealNav(){
-    let cp,lp;
-    $(window).on('scroll',function(){
-        if(!autoScrl){
-            cp = $(window).scrollTop()
-            if(bp){
-                if(cp < lp){
-                    $('nav').removeClass('hidden');
-                    $('.buybar').addClass('secondary');
-                } else {
-                    $('nav').addClass('hidden');
-                    $('.buybar').removeClass('secondary');
-                }
-            }
-            lp = cp;
-        }
-    });
-}
 
 
 //IMAGE CAROUSEL
@@ -191,16 +147,6 @@ function paginationControls(){
 }
 
 
-//BLOG CAROUSEL ANIMATED LIQUID
-function blogPostLiquid(){
-    let post = $('#blog-carousel').find('.posts').children();
-    post.removeClass('active jux');
-    post.eq(curr).addClass('active');
-    post.eq(curr + 1).addClass('jux');
-    post.eq(curr - 1).addClass('jux');
-}
-
-
 //IMAGE CAROUSEL LABELS
 function imageCarouselLabels(){
     let curr = parseInt($('#image-carousel').find('.pagination').attr('data-page-curr'));
@@ -232,5 +178,9 @@ function triggerInitLabelLoad(){
         },1000);
     }
 }
+
+
+
+
 
 

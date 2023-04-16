@@ -3,19 +3,602 @@
 
     <head>
 
+        <title>A Plague Tale: Requiem | Tale</title>
+
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/components.css">
-        <link rel="stylesheet" href="css/tale.css">
+        <link rel="stylesheet" href="css/characters.css">
+        <link rel="stylesheet" href="css/scenes.css">
+        <link rel="stylesheet" href="css/video-player.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://kit.fontawesome.com/3dd4d3e2df.js" crossorigin="anonymous"></script>
         <script src="js/global.js"></script>
+        <script src="js/characters.js"></script>
+        <script src="js/video-player.js"></script>
 
     </head>
 
     <body>
 
-        
+        <section id="passed" class="story">
+            <div class="divider absolute">
+                <div><div></div></div>
+                <div class="icon"><i class="fa-solid fa-circle-chevron-down"></i></div>
+                <div><div></div></div>
+            </div>
+            <div class="overlay bottom">
+                <div class="content center bottom">
+                    
+                    <div class="text-lockup center out">
+                        <div class="divider">
+                            <div><div></div></div>
+                            <div class="icon"><i class="fa-regular fa-hourglass-half"></i></div>
+                            <div><div></div></div>
+                        </div>
+                        <div class="text">
+                            <h1 class="primary">Six months have passed...</h1>
+                            <p>...since Amicia and Hugo defeated Grand Inquisitor Vitalis Bénévent and foiled the Inquisition's nefarious plans.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newlife" class="story">
+            <div class="divider absolute">
+                <div><div></div></div>
+                <div class="icon"><i class="fa-solid fa-circle-chevron-down"></i></div>
+                <div><div></div></div>
+            </div>
+            <div class="overlay right">
+                <div class="content right middle">
+                    
+                    <div class="text-lockup half right out">
+                        <div class="divider">
+                            <div><div></div></div>
+                            <div class="icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+                            <div><div></div></div>
+                        </div>
+                        <div class="text">
+                            <h1>With Hugo's curse</h1>
+                            <h1 class="primary">now under control...</h1>
+                            <p>...the siblings escape their devastated homeland and travel far south, to new regions and vibrant cities. There, they attempt to start a new life and find a definitive cure to Hugo's affliction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="awaken" class="story">
+            <div class="divider absolute">
+                <div><div></div></div>
+                <div class="icon"><i class="fa-solid fa-circle-chevron-down"></i></div>
+                <div><div></div></div>
+            </div>
+            <div class="overlay left">
+                <div class="content left middle">
+                    
+                    <div class="text-lockup half left out">
+                        <div class="divider">
+                            <div><div></div></div>
+                            <div class="icon"><i class="fa-solid fa-virus"></i></div>
+                            <div><div></div></div>
+                        </div>
+                        <div class="text">
+                            <h1>But, when</h1>
+                            <h1 class="primary">Hugo's powers reawaken...</h1>
+                            <p>...death and destruction return in a flood of devouring rats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="allies" class="story">
+            <div class="divider absolute">
+                <div><div></div></div>
+                <div class="icon"><i class="fa-solid fa-circle-user"></i></div>
+                <div><div></div></div>
+            </div>
+            <div class="overlay left">
+                <div class="content left middle">
+                    
+                    <div class="text-lockup half left out">
+                        <div class="divider">
+                            <div><div></div></div>
+                            <div class="icon"><i class="fa-solid fa-person-running"></i></div>
+                            <div><div></div></div>
+                        </div>
+                        <div class="text">
+                            <h1 class="primary">Forced to flee once more</h1>
+                            <p>...the siblings must make unlikely new allies as they place their hopes in a prophesized island that may hold the key to saving Hugo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="characters">
+            <div class="divider absolute">
+                <div><div></div></div>
+                <div class="icon"><i class="fa-solid fa-circle-dot"></i></div>
+                <div><div></div></div>
+            </div>
+            <div class="container">
+
+                <div id="amicia" class="character active">
+                    <div class="tab">
+                        <div class="label"><div>Amicia de Rune</div></div>
+                    </div>
+                    <div class="image overlay right">
+                        <div class="labels">
+                            <div class="label out">
+                                <div class="divider left bubble large">
+                                    <div><div></div></div>
+                                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                                    <div><div></div></div>
+                                </div>
+                                <h2>Amicia de Rune</h2>
+                                <ul>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Primary Weapon</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Sling</h3>
+                                    </li>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Special Skill</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Stealth</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="hugo" class="character">
+                    <div class="tab">
+                        <div class="label"><div>Hugo de Rune</div></div>
+                    </div>
+                    <div class="image overlay right">
+                        <div class="labels">
+                            <div class="label out">
+                                <div class="divider left bubble large">
+                                    <div><div></div></div>
+                                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                                    <div><div></div></div>
+                                </div>
+                                <h2>Hugo de Rune</h2>
+                                <ul>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Primary Weapon</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>The Prima Macula</h3>
+                                    </li>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Special Skill</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Infiltration</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="lucas" class="character">
+                    <div class="tab">
+                        <div class="label"><div>Magister Lucas</div></div>
+                    </div>
+                    <div class="image overlay right">
+                        <div class="labels">
+                            <div class="label out">
+                                <div class="divider left bubble large">
+                                    <div><div></div></div>
+                                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                                    <div><div></div></div>
+                                </div>
+                                <h2>Magister Lucas</h2>
+                                <ul>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Primary Weapon</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Ignifer</h3>
+                                    </li>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Special Skill</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Alchemy</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="beatrice" class="character">
+                    <div class="tab">
+                        <div class="label"><div>Béatrice de Rune</div></div>
+                    </div>
+                    <div class="image overlay right">
+                        <div class="labels">
+                            <div class="label out">
+                                <div class="divider left bubble large">
+                                    <div><div></div></div>
+                                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                                    <div><div></div></div>
+                                </div>
+                                <h2>Béatrice de Rune</h2>
+                                <ul>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Primary Weapon</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Somnum</h3>
+                                    </li>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Special Skill</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Medicine</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="sophia" class="character">
+                    <div class="tab">
+                        <div class="label"><div>Captain Sophia</div></div>
+                    </div>
+                    <div class="image overlay right">
+                        <div class="labels">
+                            <div class="label out">
+                                <div class="divider left bubble large">
+                                    <div><div></div></div>
+                                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                                    <div><div></div></div>
+                                </div>
+                                <h2>Captain Sophia</h2>
+                                <ul>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Primary Weapon</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Prism</h3>
+                                    </li>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Special Skill</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Subterfuge</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="arnaud" class="character">
+                    <div class="tab">
+                        <div class="label"><div>Arnaud Malpart</div></div>
+                    </div>
+                    <div class="image overlay right">
+                        <div class="labels">
+                            <div class="label out">
+                                <div class="divider left bubble large">
+                                    <div><div></div></div>
+                                    <div class="icon"><i class="fa-solid fa-user"></i></div>
+                                    <div><div></div></div>
+                                </div>
+                                <h2>Arnaud Malpart</h2>
+                                <ul>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Primary Weapon</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand-fist"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Sword & Board</h3>
+                                    </li>
+                                    <li class="sublabel">
+                                        <h4 class="primary">Special Skill</h4>
+                                        <div>
+                                            <div class="divider left bubble">
+                                                <div><div></div></div>
+                                                <div class="icon"><i class="fa-solid fa-hand"></i></div>
+                                                <div><div></div></div>
+                                            </div>
+                                        </div>
+                                        <h3>Phalanx</h3>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section id="videos">
+            <div class="overlay left">
+                <div class="content left middle">
+                    <div class="filmstrip">
+
+                        <div class="overlay absolute"></div>
+
+                        <div class="container scrollbar">
+
+                            <div class="divider">
+                                <div><div></div></div>
+                                <div class="icon"><i class="fa-solid fa-circle-chevron-down"></i></div>
+                                <div><div></div></div>
+                            </div>
+
+                            <div class="content-box small" data-video-id="qIbzwb8vzNI">
+                                <div class="image link">
+                                    <div class="absolute content center middle overlay icon"><i class="fa-brands fa-youtube"></i></div>
+                                    <img src="images/video-trailer-accolades-1.jpg" />
+                                </div>
+                                <div class="button-container">
+                                    <div class="button flip secondary small">
+                                        <div class="box">
+                                            <div>Launch Trailer</div>
+                                            <div>Watch Video</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-box small" data-video-id="zoEwC2TxiMA">
+                                <div class="image link">
+                                    <div class="absolute content center middle overlay icon"><i class="fa-brands fa-youtube"></i></div>
+                                    <img src="images/video-trailer-accolades-2.jpg" />
+                                </div>
+                                <div class="button-container">
+                                    <div class="button flip secondary small">
+                                        <div class="box">
+                                            <div>Accolades Trailer</div>
+                                            <div>Watch Video</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-box small" data-video-id="ePwGCPBQ2Ak">
+                                <div class="image link">
+                                    <div class="absolute content center middle overlay icon"><i class="fa-brands fa-youtube"></i></div>
+                                    <img src="images/video-trailer-story.jpg" />
+                                </div>
+                                <div class="button-container">
+                                    <div class="button flip secondary small">
+                                        <div class="box">
+                                            <div>Story Trailer</div>
+                                            <div>Watch Video</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-box small" data-video-id="aPKIQgc0Fnw">
+                                <div class="image link">
+                                    <div class="absolute content center middle overlay icon"><i class="fa-brands fa-youtube"></i></div>
+                                    <img src="images/video-trailer-gameplay-1.jpg" />
+                                </div>
+                                <div class="button-container">
+                                    <div class="button flip secondary small">
+                                        <div class="box">
+                                            <div>Gameplay | Reveal</div>
+                                            <div>Watch Video</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-box small" data-video-id="aaT4Q4NGm-A">
+                                <div class="image link">
+                                    <div class="absolute content center middle overlay icon"><i class="fa-brands fa-youtube"></i></div>
+                                    <img src="images/video-trailer-gameplay-2.jpg" />
+                                </div>
+                                <div class="button-container">
+                                    <div class="button flip secondary small">
+                                        <div class="box">
+                                            <div>Gameplay | Overview</div>
+                                            <div>Watch Video</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-box small" data-video-id="vfD0Fg10oYg">
+                                <div class="image link">
+                                    <div class="absolute content center middle overlay icon"><i class="fa-brands fa-youtube"></i></div>
+                                    <img src="images/video-trailer-gameplay-3.jpg" />
+                                </div>
+                                <div class="button-container">
+                                    <div class="button flip secondary small">
+                                        <div class="box">
+                                            <div>Gameplay | Crossbow</div>
+                                            <div>Watch Video</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="content-box small" data-video-id="OlZ6FsmqEiA">
+                                <div class="image link">
+                                    <div class="absolute content center middle overlay icon"><i class="fa-brands fa-youtube"></i></div>
+                                    <img src="images/video-trailer-gameplay-4.jpg" />
+                                </div>
+                                <div class="button-container">
+                                    <div class="button flip secondary small">
+                                        <div class="box">
+                                            <div>Gameplay | Stealth</div>
+                                            <div>Watch Video</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="divider">
+                                <div><div></div></div>
+                                <div class="icon"><i class="fa-solid fa-circle-chevron-up"></i></div>
+                                <div><div></div></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="video-player">
+                        <div class="text-lockup left absolute">
+                            <div class="divider left bubble large">
+                                <div><div></div></div>
+                                <div class="icon"><i class="fa-solid fa-video"></i></div>
+                                <div><div></div></div>
+                            </div>
+                            <div class="text">
+                                <h1>Official Trailers</h1>
+                                <p>View trailers, gameplay videos and more from our YouTube channel. Immerse yourself in the adventure and get a sample of what's to come.</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="close absolute"><i class="fa-solid fa-circle-xmark"></i></div>
+                            <div class="video-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="begin" class="story">
+            <div class="divider absolute">
+                <div><div></div></div>
+                <div class="icon"><i class="fa-solid fa-circle-chevron-down"></i></div>
+                <div><div></div></div>
+            </div>
+            <div class="overlay bottom">
+                <div class="content center bottom">
+                    
+                    <div class="text-lockup half center out">
+                        <div class="divider">
+                            <div><div></div></div>
+                            <div class="icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                            <div><div></div></div>
+                        </div>
+                        <div class="text">
+                            <h1 class="primary">Join Amicia and Hugo</h1>
+                            <p>...on an epic adventure across the sea to find the cure to Hugo's affliction once and for all.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="purchase" class="section">
+            <div class="content overlay full center middle">
+                <div class="content-box vertical small">
+                    <div class="image"><img src="images/buy-requiem.jpg" /></div>
+                    <div class="button-container">
+                        <div class="button flip small" onClick="window.location.href = 'buy-now.html'">
+                            <div class="box">
+                                <div>A Plague Tale: Requiem</div>
+                                <div>Buy Now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box vertical small">
+                    <div class="image"><img src="images/buy-col-ed.jpg" /></div>
+                    <div class="button-container">
+                        <div class="button flip small" onClick="window.location.href = 'buy-now.html'">
+                            <div class="box">
+                                <div>Collector's Edition</div>
+                                <div>Buy Now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box vertical small">
+                    <div class="image"><img src="images/buy-bundle.jpg" /></div>
+                    <div class="button-container">
+                        <div class="button flip small" onClick="window.location.href = 'buy-now.html'">
+                            <div class="box">
+                                <div>A Plague Tale: Bundle</div>
+                                <div>Buy Now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
     </body>
 
