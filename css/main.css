@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Cormorant:wght@300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* MAIN *******************************/
 * {
@@ -64,9 +64,25 @@ p {
     line-height:1.6em;
 }
 
+h1 + p,
+h2 + p,
+h3 + p,
+p + p {
+    margin-top:32px;
+}
+
+.bullets {
+    list-style: circle;
+    font-size:1.2em;
+}
+
+.bullets li + li {
+    margin-top:16px;
+}
+
 .legal {
     font-size:0.8em;
-    font-family:sans-serif;
+    font-family:'Montserrat', sans-serif;
     color:var(--gray-400);
 }
 
@@ -104,7 +120,21 @@ section .content,
 .content.middle, .content.column.center {align-items: center;}
 .content.bottom {align-items: flex-end;}
 
+.cols {
+    display:grid;
+}
 
+.cols.half {grid-template-columns: 1fr 1fr;}
+.cols.third-right {grid-template-columns: 2fr 1fr;}
+.cols.third-left {grid-template-columns: 1fr 2fr;}
+.cols.quarter-right {grid-template-columns: 3fr 1fr;}
+.cols.quarter-left {grid-template-columns: 1fr 3fr;}
+
+
+.cols > div:first-child {padding-right:64px;}
+.cols > div:last-child {padding-left:64px;}
+
+.cols.divide > div:last-child {border-left:1px solid var(--gray-200);}
 
 /* OVERLAYS */
 
@@ -113,34 +143,15 @@ section .content,
     height:100%;
 }
 
-.overlay.full {
-    background-color:#0006;
-}
+.overlay.full {background-color:#0009;}
+.overlay.top {background-image:linear-gradient(to bottom, #000C 20%, #0000 50%);}
+.overlay.bottom {background-image:linear-gradient(to top, #000C 20%, #0000 50%);}
+.overlay.left {background-image:linear-gradient(to right, #000C 20%, #0000 60%);}
+.overlay.right {background-image:linear-gradient(to left, #000C 20%, #0000 60%);}
+.overlay.fixed {background-attachment: fixed;}
 
-.overlay.top {
-    background-image:linear-gradient(to bottom, #000C 20%, #0000 50%);
-}
-
-.overlay.bottom {
-    background-image:linear-gradient(to top, #000C 20%, #0000 50%);
-}
-
-.overlay.left {
-    background-image:linear-gradient(to right, #000C 20%, #0000 60%);
-}
-
-.overlay.right {
-    background-image:linear-gradient(to left, #000C 20%, #0000 60%);
-}
-
-.overlay.fixed {
-    background-attachment: fixed;
-}
-
-.absolute {
-    position:absolute;
-}
-
+.absolute {position:absolute;}
+.overflow {overflow:hidden;}
 
 section.moveable-bg {
     overflow: hidden;
