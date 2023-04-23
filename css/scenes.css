@@ -96,6 +96,25 @@ section {
     background-image:url(../images/home-hero.jpg);
 }
 
+#collector {
+    background-image:url(../images/purchase-collector.jpg);
+}
+
+#collector .logo h4 {
+    color:var(--gray-800);
+    background-image:linear-gradient(to right, transparent, var(--primary) 20%, var(--primary) 80%, transparent);
+    text-align:center;
+    padding:2px 0;
+}
+
+#collector .tabs > .container .tab-content:first-child {
+    max-width:100%;
+}
+
+#collector .overview {
+    
+}
+
 
 
 

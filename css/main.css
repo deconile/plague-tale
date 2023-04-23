@@ -68,7 +68,7 @@ h1 + p,
 h2 + p,
 h3 + p,
 p + p {
-    margin-top:32px;
+    margin-top:24px;
 }
 
 .bullets {
@@ -345,8 +345,8 @@ footer .legal {
     white-space: nowrap;
 }
 
-.text-lockup .text > *:last-child {
-    padding-top:16px;
+.text-lockup .text > p {
+    margin-top:16px;
 }
 
 .text-lockup.left .text {padding:0 64px;}

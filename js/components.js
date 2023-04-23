@@ -7,6 +7,7 @@ $(document).ready(function(){
 //WHEN PAGE HAS LOADED
 $(window).on('load', function(){
     purchaseOptions();
+    activateContent();
     tabs();
 });
 
@@ -22,13 +23,7 @@ $(window).on('scroll',function(){
 // TABS ///////////////////////////
 function tabs(){
     let tab = $('.tabs').find('.menu').find('li');
-    let content = $('.tabs').find('.tab-content');
     let baseW = tab.last().outerWidth();
-
-    tab.first().addClass('active');
-    content.first().each(function(){
-        $(this).show().removeClass('out');
-    })
 
     tab.each(function(){
         let w = $(this).find('div').outerWidth();
@@ -117,6 +112,13 @@ function purchaseOptions(){
             }
 
         }
+    });
+}
+
+function activateContent(){
+    $('.product').each(function(){
+        $(this).find('.tabs').find('.menu').find('li').first().addClass('active');
+        $(this).find('.tabs').find('.tab-content').first().show().removeClass('out')
     });
 }
 
